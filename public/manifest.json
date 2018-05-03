@@ -1,0 +1,45 @@
+{
+  "short_name": "Pizza'122",
+  "name": "Pizza'122 personnalisez et commandez !",
+  "icons": [
+    {
+      "src": "logo/pizza36.png",
+      "type": "image/png",
+      "sizes": "36x36"
+    },
+    {
+      "src": "logo/pizza48.png",
+      "type": "image/png",
+      "sizes": "48x48"
+    },
+    {
+      "src": "logo/pizza64.png",
+      "type": "image/png",
+      "sizes": "64x64"
+    },
+    {
+      "src": "logo/pizza72.png",
+      "type": "image/png",
+      "sizes": "72x72"
+    },
+    {
+      "src": "logo/pizza96.png",
+      "type": "image/png",
+      "sizes": "96x96"
+    },
+    {
+      "src": "logo/pizza144.png",
+      "type": "image/png",
+      "sizes": "144x144"
+    },
+    {
+      "src": "logo/pizza192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    }
+  ],
+  "start_url": "./index.html",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
