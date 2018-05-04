@@ -72,14 +72,15 @@ const update = changes => {
 };
 
 const loadPizzas = () => {
-  update({ loadingPizza: true });
+  update({ loadingPizza: true, pizzasError: null });
 
   axios
     .get(`${API}/pizzas`)
     .then(_ =>
       update({
         pizzas: _.data,
-        loadingPizza: false
+        loadingPizza: false,
+        pizzasError: null
       })
     )
     .catch(_ => {
