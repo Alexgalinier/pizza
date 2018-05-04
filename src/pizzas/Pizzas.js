@@ -13,8 +13,6 @@ export default ({
   orderConfirmed,
   ...selectedOptions
 }) => {
-  if (validateOrder || orderConfirmed) return <div />;
-
   let res;
 
   const curryOnPizzaClick = id => () => selectPizza(id);

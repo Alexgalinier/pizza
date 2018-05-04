@@ -14,7 +14,6 @@ html {
 }
 
 body {
-  overflow: hidden;
   margin: 0;
   background: #ebebec;
 }
@@ -34,12 +33,8 @@ p {
   text-rendering: optimizeLegibility;
 }
 
-.has-order .Pizzas {
-  margin-bottom: 56px;
-}
-
-.has-order .SelectedPizza {
-  margin-bottom: 64px;
+.has-order {
+  padding-bottom: 72px;
 }
 
 @font-face {
@@ -86,4 +81,50 @@ p {
   color: white;
   border: none;
   border-radius: 3px;
+}
+
+.menu-login {
+  display: flex;
+  padding: 16px;
+}
+
+.menu-login button {
+  flex: 1;
+}
+
+.form-input {
+  background: white;
+  display: flex;
+  flex-direction: column;
+  padding: 0 16px;
+}
+
+.form-input label {
+  font-size: 14px;
+  padding-top: 8px;
+  padding-bottom: 4px;
+}
+
+.form-input input {
+  background: rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  line-height: 36px;
+  padding: 0 8px;
+  border-radius: 3px;
+  font-size: 16px;
+}
+
+.user {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.user div {
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+
+.user button {
+  flex: 1;
 }

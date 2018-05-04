@@ -14,7 +14,6 @@ export default ({
   orderConfirmed
 }) => {
   if (orderConfirmed) return <OrderConfirmed address={address} />;
-  if (order.length === 0) return <div />;
   if (validateOrderAddress) return <ValidateOrderAddress address={address} />;
   if (validateOrder)
     return (

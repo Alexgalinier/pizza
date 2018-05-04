@@ -1,5 +1,6 @@
 import { API } from 'config';
 import axios from 'axios';
+import jwtDecode from 'jwt-decode';
 
 let connectedComponent;
 let state = {
@@ -18,7 +19,14 @@ let state = {
     city: ''
   },
   addressValidated: false,
-  orderConfirmed: false
+  orderConfirmed: false,
+  user: null,
+  loginUser: false,
+  login: {
+    username: '',
+    password: ''
+  },
+  menu: false
 };
 
 if (localStorage.getItem('state')) {
@@ -61,6 +69,20 @@ export const dispatch = (actionKey, data = {}) => {
       return cancelOrder();
     case 'ORDER_FINISHED':
       return orderFinished();
+    case 'LOGIN_USER':
+      return loginUser();
+    case 'SHOW_MENU':
+      return showMenu();
+    case 'HIDE_MENU':
+      return hideMenu();
+    case 'CHANGE_LOGIN':
+      return changeLogin(data);
+    case 'CREATE_ACCOUNT':
+      return createAccount();
+    case 'LOGIN':
+      return login();
+    case 'LOGOUT':
+      return logout();
     default:
       console.log('Unknown action key', actionKey);
   }
@@ -137,6 +159,7 @@ const validateOrder = () => update({ validateOrder: true });
 const validateOrderAddress = () => update({ validateOrderAddress: true });
 const back = () => {
   if (state.selectedPizza) return update({ selectedPizza: null });
+  if (state.loginUser) return update({ loginUser: null });
   if (state.validateOrderAddress)
     return update({ validateOrderAddress: false });
   if (state.validateOrder) return update({ validateOrder: false });
@@ -163,3 +186,32 @@ const cancelOrder = () => {
 };
 
 const orderFinished = () => update({ orderConfirmed: false });
+const loginUser = () => update({ loginUser: true, menu: false });
+const showMenu = () => update({ menu: true });
+const hideMenu = () => update({ menu: false });
+const changeLogin = loginValues =>
+  update({ login: { ...state.login, ...loginValues } });
+const createAccount = () => {
+  return axios
+    .post(`${API}/users`, state.login)
+    .then(() => login())
+    .catch(_ => {
+      console.error(_);
+    });
+};
+const login = () => {
+  return axios
+    .post(`${API}/login`, state.login)
+    .then(_ =>
+      update({
+        user: jwtDecode(_.data.token),
+        loginUser: false
+      })
+    )
+    .catch(_ => {
+      console.error(_);
+    });
+};
+const logout = () => {
+  update({ user: null, menu: false });
+};
