@@ -1,0 +1,28 @@
+.Header {
+  height: 60px;
+  background: #f44336;
+  position: relative;
+}
+
+.Header h1 {
+  color: white;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 60px;
+  margin: 0;
+  padding-left: 72px;
+}
+
+.Header .icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0 16px;
+  color: white;
+  line-height: 60px;
+  font-size: 25px;
+}
+
+.Header .icon:active {
+  background: rgba(0, 0, 0, 0.1);
+}

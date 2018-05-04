@@ -1,0 +1,168 @@
+.Pizzas h2 {
+  margin: 0;
+  padding: 0 16px;
+  font-size: 12px;
+  line-height: 36px;
+  background: white;
+}
+
+.Pizzas .pizza-error {
+  padding: 0 16px;
+}
+
+.Pizzas .Pizza {
+  padding: 16px;
+  display: flex;
+  align-items: stretch;
+  border-bottom: 1px solid rgb(234, 234, 234);
+  background: white;
+}
+
+.Pizzas .Pizza:active {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.Pizzas .Pizza img {
+  display: block;
+  width: 50px;
+  margin-right: 16px;
+}
+
+.Pizzas .Pizza .pizza-infos {
+  position: relative;
+  flex: 1;
+}
+
+.Pizzas .Pizza .pizza-ingredients {
+  color: rgb(180, 180, 180);
+  font-size: 14px;
+  padding-right: 80px;
+  padding-top: 6px;
+}
+
+.Pizzas .Pizza .pizza-price {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  border-radius: 3px;
+  background: #cfd8dc;
+  width: 70px;
+  display: flex;
+  flex-direction: column;
+}
+
+.Pizzas .Pizza .pizza-price span:first-child {
+  font-size: 12px;
+  display: block;
+  text-align: center;
+  padding: 4px 0;
+}
+
+.Pizzas .Pizza .pizza-price span:last-child {
+  display: block;
+  text-align: center;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.SelectedPizza {
+  margin: 8px;
+  box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.15);
+  border-radius: 3px;
+  background: white;
+}
+
+.SelectedPizza .selected-pizza-image {
+  text-align: center;
+  padding-top: 16px;
+}
+
+.SelectedPizza h2 {
+  font-weight: normal;
+  padding: 16px;
+  padding-bottom: 8px;
+  margin: 0;
+}
+
+.SelectedPizza .selected-pizza-ingredients,
+.SelectedPizza .selected-pizza-size,
+.SelectedPizza .selected-pizza-quantity {
+  border-bottom: 1px solid rgb(234, 234, 234);
+  padding: 8px 16px;
+  display: flex;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+}
+
+.SelectedPizza .selected-pizza-ingredients {
+  border-top: 1px solid rgb(234, 234, 234);
+}
+
+.SelectedPizza .label {
+  width: 70px;
+}
+
+.SelectedPizza .content {
+  padding-left: 16px;
+  width: 100%;
+}
+
+.SelectedPizza .size {
+  padding: 12px 5px;
+  background: #eceff1;
+  border-radius: 3px;
+  font-size: 12px;
+}
+
+.SelectedPizza .size.selected {
+  background: #cfd8dc;
+}
+
+.selected-pizza-size .content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.selected-pizza-quantity .content {
+  display: flex;
+  align-items: center;
+}
+
+.selected-pizza-quantity span {
+  flex: 1;
+}
+
+.selected-pizza-quantity button {
+  background: #f44336;
+  border: none;
+  line-height: 36px;
+  min-width: 36px;
+  font-size: 20px;
+  color: white;
+  margin-right: 8px;
+  border-radius: 3px;
+}
+
+.selected-pizza-quantity button:last-child {
+  margin: 0;
+}
+
+.selected-pizza-add {
+  display: flex;
+  padding: 8px 16px;
+}
+
+.selected-pizza-add button {
+  background: #f44336;
+  line-height: 36px;
+  font-size: 16px;
+  color: white;
+  flex: 1;
+  border: none;
+  border-radius: 3px;
+}

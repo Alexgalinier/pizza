@@ -1,0 +1,98 @@
+.Order {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 8px 16px;
+  background: white;
+  display: flex;
+  border-top: 1px solid rgb(234, 234, 234);
+}
+
+.Order button {
+  background: #f44336;
+  line-height: 36px;
+  font-size: 16px;
+  color: white;
+  flex: 1;
+  border: none;
+  border-radius: 3px;
+}
+
+.Pizzas.ValidateOrder .pizza-price span:last-child {
+  font-size: 16px;
+}
+
+.ValidateOrder .set-address,
+.ValidateOrderAddress .set-address,
+.ValidateOrder .confirm-order,
+.ValidateOrder .cancel-order,
+.OrderConfirmed .back-home {
+  background: white;
+  padding: 8px 16px;
+  display: flex;
+  border-top: 1px solid rgb(234, 234, 234);
+}
+
+.ValidateOrderAddress .set-address {
+  padding: 16px;
+}
+
+.ValidateOrder .set-address button,
+.ValidateOrderAddress .set-address button,
+.ValidateOrder .confirm-order button,
+.ValidateOrder .cancel-order button,
+.OrderConfirmed .back-home button {
+  flex: 1;
+}
+
+.ValidateOrder .cancel-order button {
+  background: white;
+  color: black;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.ValidateOrderAddress h2 {
+  margin: 0;
+  padding: 0 16px;
+  font-size: 12px;
+  line-height: 36px;
+  background: white;
+}
+
+.ValidateOrderAddress .form-input {
+  background: white;
+  display: flex;
+  flex-direction: column;
+  padding: 0 16px;
+}
+
+.ValidateOrderAddress .form-input label {
+  font-size: 14px;
+  padding-top: 8px;
+  padding-bottom: 4px;
+}
+
+.ValidateOrderAddress .form-input input {
+  background: rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  line-height: 36px;
+  padding: 0 8px;
+  border-radius: 3px;
+  font-size: 16px;
+}
+
+.OrderConfirmed {
+  background: white;
+  text-align: center;
+}
+
+.OrderConfirmed p {
+  padding: 0 16px;
+}
+
+.OrderConfirmed h2,
+.OrderConfirmed .thanks {
+  margin: 0;
+  padding: 16px;
+}
