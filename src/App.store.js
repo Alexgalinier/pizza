@@ -72,7 +72,7 @@ const update = changes => {
 };
 
 const loadPizzas = () => {
-  update({ loadingPizza: true, pizzasError: null });
+  update({ loadingPizza: true, pizzasError: '' });
 
   axios
     .get(`${API}/pizzas`)
@@ -80,7 +80,7 @@ const loadPizzas = () => {
       update({
         pizzas: _.data,
         loadingPizza: false,
-        pizzasError: null
+        pizzasError: ''
       })
     )
     .catch(_ => {
