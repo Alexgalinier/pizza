@@ -34,7 +34,10 @@ export default class App extends Component {
         : null;
 
     const menuClick =
-      !state.validateOrder && !state.orderConfirmed && !state.loginUser
+      !state.selectedPizza &&
+      !state.validateOrder &&
+      !state.orderConfirmed &&
+      !state.loginUser
         ? () => showMenu()
         : null;
 
