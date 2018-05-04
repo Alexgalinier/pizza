@@ -52,6 +52,7 @@
   width: 70px;
   display: flex;
   flex-direction: column;
+  z-index: 1;
 }
 
 .Pizzas .Pizza .pizza-price span:first-child {
