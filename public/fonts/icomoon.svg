@@ -7,6 +7,7 @@
 <font-face units-per-em="1024" ascent="960" descent="-64" />
 <missing-glyph horiz-adv-x="1024" />
 <glyph unicode="&#x20;" horiz-adv-x="512" d="" />
+<glyph unicode="&#xe254;" glyph-name="mode_edit" d="M884 638.667l-78-78-160 160 78 78c16 16 44 16 60 0l100-100c16-16 16-44 0-60zM128 202.667l472 472 160-160-472-472h-160v160z" />
 <glyph unicode="&#xe5c4;" glyph-name="arrow_back" d="M854 468.667v-84h-520l238-240-60-60-342 342 342 342 60-60-238-240h520z" />
 <glyph unicode="&#xe5d2;" glyph-name="menu" d="M128 682.667h768v-86h-768v86zM128 384.667v84h768v-84h-768zM128 170.667v86h768v-86h-768z" />
 </font></defs></svg>

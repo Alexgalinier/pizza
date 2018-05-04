@@ -44,11 +44,11 @@ p {
 
 @font-face {
   font-family: 'icomoon';
-  src: url('/fonts/icomoon.eot?83rkx');
-  src: url('/fonts/icomoon.eot?83rkx#iefix') format('embedded-opentype'),
-    url('/fonts/icomoon.ttf?83rkx') format('truetype'),
-    url('/fonts/icomoon.woff?83rkx') format('woff'),
-    url('/fonts/icomoon.svg?83rkx#icomoon') format('svg');
+  src: url('/fonts/icomoon.eot?mtfvce');
+  src: url('/fonts/icomoon.eot?mtfvce#iefix') format('embedded-opentype'),
+    url('/fonts/icomoon.ttf?mtfvce') format('truetype'),
+    url('/fonts/icomoon.woff?mtfvce') format('woff'),
+    url('/fonts/icomoon.svg?mtfvce#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -71,6 +71,9 @@ p {
 
 .icon-arrow_back:before {
   content: '\e5c4';
+}
+.icon-mode_edit:before {
+  content: '\e254';
 }
 .icon-menu:before {
   content: '\e5d2';

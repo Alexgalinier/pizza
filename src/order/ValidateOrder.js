@@ -13,9 +13,17 @@ export default ({ order, address, addressValidated, validateOrder }) => {
       {order.map((_, index) => <Pizza key={index + _._id} {..._} />)}
       <div className="set-address">
         {addressValidated ? (
-          <p>
-            {address.name} <br /> {address.code} {address.city}
-          </p>
+          <div>
+            <p>
+              {address.name} <br /> {address.code} {address.city}
+            </p>
+            <button
+              className="button modify-address"
+              onClick={() => showValidateOrderAddress()}
+            >
+              <i className="icon-mode_edit" />
+            </button>
+          </div>
         ) : (
           <button className="button" onClick={() => showValidateOrderAddress()}>
             SAISIR ADRESSE DE LIVRAISON
